@@ -1,0 +1,25 @@
+.friendsnamesdisplay i{
+    color:#bbbbbb;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.friendsnamesdisplay {
+    background: #f7f7f7;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    align-items: flex-end;
+    color: #999999;
+}
+
+.friends__channel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
