@@ -1,0 +1,72 @@
+.list-box__shortmessage i{color: red; margin-left: 5px;}
+
+.more-grid-box{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    margin-top: 40px;
+    color: #666;
+}
+
+.more-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+
+.more-grid-item i{
+    font-size: 35px;
+    color: black;
+}
+
+.more-grid-item p{
+    margin-bottom: 40px;
+}
+
+.more-grid-item:first-child {
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+
+.more-grid-item:nth-child(2) {
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+
+.more-grid-item:nth-child(3) {
+    grid-column:3/4;
+    grid-row: 1/2;
+}
+
+.more-grid-item:nth-child(4) {
+    grid-column:4/5;
+    grid-row: 1/2;
+}
+
+.more-grid-item:nth-child(5) {
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+
+.more-grid-item:nth-child(6) {
+    grid-column:2/3;
+    grid-row: 2/3;
+}
+
+.Suggestions {
+    color: #333;
+}
+
+.more-grid-box2{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 40px;
+    color: #666;
+}
