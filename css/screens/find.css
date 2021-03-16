@@ -1,0 +1,75 @@
+.find__functions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.function_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+}
+.function_icon i {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.friends__recommend_message {
+    text-align: center;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+
+}
+
+.common_item {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.common_item__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+}
+.reverse__item-none-right {
+    flex-direction: row-reverse;
+}
+
+.common_item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+}
+
+.common_item__title{
+    font-weight: 600;
+}
+
+.common_item__tag, .common_item__memberinfo {
+    color:gray;
+    font-size: 15px;
+}
+
+.common_item__memberinfo a:link{
+    color:pink;
+    text-decoration: none;
+}
+
+.chatroomimg {
+    transform: translateY(5px);
+}
