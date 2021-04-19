@@ -1,29 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"); /*글꼴*/
-@import "reset.css"; /*브라우저가 default로 설정해 놓은 모든 css style을 삭제.*/
-@import "variables.css"; /*사용될 css변수들의 저장창고*/
+/* import google font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 
-@import "components/status-bar.css"; /*component(폰상태창)*/
-@import "components/nav.css"; /*component(네비게이션바)*/
-@import "components/badge.css"; /*component(alert badge)*/
-@import "components/screen-header.css"; /*component(스크린 헤더)*/
-@import "components/alt-screen-header.css"; /*component(스크린 헤더2)*/
-@import "components/user-component.css"; /*component(사용자 프로필)*/
-@import "components/icon-row.css"; /*component(아이콘 행)*/
-@import "components/no-mobile.css"; /*component(media-query)*/
+@import "variables.css";
+
+/*components*/
+@import "components/wide_screen.css"; /*fist page. notice of wide screen*/
+@import "components/status-bar.css"; /*battery info, etc.*/
+@import "components/first-header.css"; /*main header*/
+@import "components/nav.css"; /*navigation*/
+@import "components/iconNoti.css"; /*alert*/
+@import "components/alt-screen-header.css"; /*second header*/
+@import "components/user-component.css"; /*user profile*/
+@import "components/icon-row.css"; /*icon row*/
 
 
-@import "screens/login.css"; /*login페이지*/
-@import "screens/welcome.css"; /*welcome 페이지*/
-@import "screens/friends.css"; /*friends페이지*/
-@import "screens/find.css"; /*find페이지*/
-@import "screens/more.css"; /*more페이지*/
-@import "screens/settings.css"; /*setting페이지*/
-@import "screens/chat.css"; /*chatting페이지*/
+
+ /*screens*/
+@import "screens/index.css"; /*login*/
+@import "screens/chat.css"; /*single Chat*/
+@import "screens/friends.css"; /*friends*/
+@import "screens/find.css"; /*find*/
+@import "screens/more.css"; /*etc*/
+@import "screens/settings.css"; /*setting*/      
 
 body {
-  font-family: "Akaya Kanadaka", cursive;
+  font-family:'Open Sans', sans-serif;
   color: black;
-  background-color: var(--pinkgold);
+  background-color: var(--bgcl);
   animation: fadeInBody 1s ease-in-out;
   animation-delay: 0s;
 }
@@ -39,4 +42,10 @@ body {
   to {
     opacity: 1;
   }
+}
+
+a:link, a:visited, a:focus{
+  text-decoration: none;
+  color:black;
+  outline: none;
 }

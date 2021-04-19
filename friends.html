@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firends-Cafe talk</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="status-bar"> <!--status bar-->
+    <div class="status-bar">
+        <!--status bar-->
         <div class="status-bar__column">
-            <span>No Service</span>    
+            <span>No Service</span>
             <i class="fas fa-ban"></i>
             <i class="fas fa-volume-off"></i>
         </div>
         <div class="status-bar__column">
-            <span>00:22</span>
+            <span>00:00</span>
         </div>
-        <div class="status-bar__column">    
-            <span>120%</span>
+        <div class="status-bar__column">
+            <span>100%</span>
             <i class="fas fa-battery-full"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
 
-    <header class="screenheader"> <!--Friends 해더-->
+    <header class="screenheader">
+
         <h1 class="screenheader__title">Friends</h1>
         <div class="screenheader__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
@@ -33,115 +39,100 @@
         </div>
     </header>
 
-    <a id="firends__name__display"><i class="fas fa-info-circle"></i><span>friends name display</span> <i class="fas fa-chevron-right fa-xs"></i></a>
+    <a id="firends__name__display"><i class="fas fa-info-circle"></i><span>friends name display</span> <i
+            class="fas fa-chevron-right fa-xs"></i></a>
 
-    <main class="main-screen"> <!--백다방 프로필부터 nav 전까지-->
-        <div class="user-component"> <!--백다방 프로필-->
+    <main class="main-screen">
+        <div class="user-component">
             <div class="user-component__column">
-                <img class="user-component__avatar user-component__avatar--xl" src="images/paikdabang.png" >
+                <img class="user-component__avatar user-component__avatar--xl" src="images/IMG_20210331_091628577.jpg">
                 <div class="user-component__text">
-                    <h4 class="user-component__title">Paikdabang</h4>
-                    <h6 class="user-component__subtitle">I can't sleep....</h6>
+                    <h4 class="user-component__title">Jsiku</h4>
+                    <h6 class="user-component__subtitle">Willkommen</h6>
                 </div>
             </div>
             <div class="user-component__column"></div>
-        </div>  
+        </div>
 
-        <div class="friends-screen__channel"><!--channel-->
+        <div class="friends-screen__channel">
+            <!--channel-->
             <div class="friends-screen__channel-header">channel<i class="fas fa-chevron-up fa-xs"></i>
             </div>
             <div class="user-component">
                 <div class="user-component__column">
-                    <img class="user-component__avatar user-component__avatar--xs" src="images/channel.png" >
+                    <img class="user-component__avatar user-component__avatar--xs"
+                        src="images/IMG_20210320_185038017.jpg">
                     <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title-xs">Channel</h4>
+                        <h4 class="user-component__title user-component__title-xs">Jsiku Talk Channel</h4>
                     </div>
                 </div>
                 <div class="user-component__column">
                     <div>
                         <span>2</span>
-                    <i class="fas fa-chevron-right fa-xs"></i>
+                        <i class="fas fa-chevron-right fa-xs"></i>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="friends-screen__friends-list">  <!--친구 리스트-->
-            <div class="friends-screen__friends-list-header">friends<i class="fas fa-chevron-up fa-xs"></i>
-            </div> 
-                <div class="user-component"> <!--친구 1-->
-                    <div class="user-component__column">
-                        <img class="user-component__avatar user-component__avatar--xs" src="images/ediya.png" >
-                        <div class="user-component__text">
-                            <h4 class="user-component__title user-component__title-xs">Ediya</h4>
-                            <h6 class="user-component__subtitle">Always thx!</h6>
-                        </div>
+        <div class="friends-screen__friends-list">
+            <div class="friends-screen__friends-list-header">Freunden<i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar--xs"
+                        src="images/IMG_20210418_195116007.jpg">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title-xs">Hayu</h4>
+                        <h6 class="user-component__subtitle">Ich bin Sechs Jahres alt!!!</h6>
                     </div>
-                    <div class="user-component__column"></div>
-                </div>  
-                <div class="friends-screen__friends-list-space"></div>
-                <div class="user-component"> <!--친구 2-->
-                    <div class="user-component__column">
-                        <img class="user-component__avatar user-component__avatar--xs" src="images/gongcha.png" >
-                        <div class="user-component__text">
-                            <h4 class="user-component__title user-component__title-xs">Gong-Cha</h4>
-                            <h6 class="user-component__subtitle">Do not kick me. plz..</h6>
-                        </div>
+                </div>
+                <div class="user-component__column"></div>
+            </div>
+            <div class="friends-screen__friends-list-space"></div>
+
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar--xs"
+                        src="images/IMG_20210319_103018587.jpg">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title-xs">Haram</h4>
+                        <h6 class="user-component__subtitle">Ich bin mude!!!</h6>
                     </div>
-                    <div class="user-component__column"></div>
-                </div>  
-                <div class="friends-screen__friends-list-space"></div>
-                <div class="user-component"> <!--친구 3-->
-                    <div class="user-component__column">
-                        <img class="user-component__avatar user-component__avatar--xs" src="images/hollys.png" >
-                        <div class="user-component__text">
-                            <h4 class="user-component__title user-component__title-xs">Hollys</h4>
-                            <h6 class="user-component__subtitle">Expensive. so what?</h6>
-                        </div>
-                    </div>
-                    <div class="user-component__column"></div>
-                </div>  
-                <div class="friends-screen__friends-list-space"></div>
-                <div class="user-component"> <!--친구 4-->
-                    <div class="user-component__column">
-                        <img class="user-component__avatar user-component__avatar--xs" src="images/starbucks.png" >
-                        <div class="user-component__text">
-                            <h4 class="user-component__title user-component__title-xs">Starbucks</h4>
-                            <h6 class="user-component__subtitle">I'm major</h6>
-                        </div>
-                    </div>
-                    <div class="user-component__column"></div>
-                </div>  
+                </div>
+                <div class="user-component__column"></div>
+            </div>
         </div>
     </main>
 
-    
 
-    <nav class="nav"> <!--nav bar-->
+
+    <nav class="nav">
+        <!--nav bar-->
         <ul class="nav__list">
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html"><i class="fas fa-user fa-2x"></i></a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="chats.html"><span class="nav__chatNotification badge">1</span><i class="far fa-comment fa-2x"></i></a>
+                <a class="nav__link" href="chats.html"><span class="nav__chatNotification badge">1</span><i
+                        class="far fa-comment fa-2x"></i></a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="find.html"><i class="fas fa-hashtag fa-2x"></i></a>
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="more.html"><div class="nav__ellipsisNotification badge-dot"></div><i class="fas fa-ellipsis-h fa-2x"></i></a>
+                <a class="nav__link" href="more.html">
+                    <div class="nav__ellipsisNotification badge-dot"></div><i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
             </li>
         </ul>
     </nav>
 
 
-    <div id=no-mobile> <!--media query screen-->
-        <span>This screen is too big 😭;;</span>
+    <div id=wide_screen>
+        <span>This screen is too WIDE</span>
     </div>
 
-    <script   
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script> <!--폰트어썸 js 키트-->
 </body>
+
 </html>

@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Cafe Talk</title>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="status-bar"> <!--status bar-->
+    <div class="status-bar">
         <div class="status-bar__column">
-            <span>No Service</span>    
+            <span>No Service</span>
             <i class="fas fa-ban"></i>
             <i class="fas fa-volume-off"></i>
         </div>
         <div class="status-bar__column">
-            <span>00:22</span>
+            <span>00:00</span>
         </div>
-        <div class="status-bar__column">    
-            <span>120%</span>
+        <div class="status-bar__column">
+            <span>100%</span>
             <i class="fas fa-battery-full"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
 
-    <header class="welcome-header"> <!--로그인 페이지-->
-        <h1 class="welcome-header__title">Welcom to Cafe talk!</h1>
-        <P class="welcome-header__text">If you have a Cafe Account,<br> log in with your email or phone number.</P>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcom to Jsiku talk</h1>
+        <P class="welcome-header__text">If you have an Account,</P>
+        <P class="welcome-header__text">log in with your email or phone number.</P>
     </header>
-    
-    <form action="welcome.html" method="GET" id="login-form"> <!--로그인 폼-->
+
+    <form action="chats.html" method="GET" id="login-form">
         <input name="userName" required autocomplete="off" type="text" placeholder="Email or Phone number">
         <input name="password" required type="password" placeholder="Password">
         <input type="submit" value="Log in">
         <a href="#">Find Cafe account of Password</a>
     </form>
 
-    <div id=no-mobile> <!--media query screen-->
-        <span>This screen is too big 😭;;</span>
+    <div id=wide_screen>
+        <span>This screen is too WIDE</span>
     </div>
 
-    <script   
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script> <!--폰트어썸 js 키트-->
 </body>
+
 </html>

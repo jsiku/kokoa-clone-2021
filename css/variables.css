@@ -1,6 +1,6 @@
 :root {
-  --caramel: #f8a34f;
-  --pinkgold: #f9dcb8;
+  --yellow: rgb(231, 210, 16);
+  --bgcl: #ecfdfd;
   --horizontal-space: 20px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --sub-fontcolor: rgba(0, 0, 0, 0.5);
