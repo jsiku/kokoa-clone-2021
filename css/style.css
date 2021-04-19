@@ -21,6 +21,7 @@
 @import "screens/chat.css"; /*chatting페이지*/
 
 body {
+<<<<<<< HEAD
   font-family: "Akaya Kanadaka", cursive;
   color: black;
   background-color: var(--pinkgold);
@@ -35,6 +36,19 @@ body {
 @keyframes fadeInBody {
   from {
     opacity: 0;
+=======
+      font-family:'Open Sans', sans-serif;
+  }
+    
+  
+  .main-screen {
+    padding: 0px var(--horizontal-space);
+    margin-top: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+>>>>>>> ed99168ba7035c1a1358661e0da952c12a6bdf2b
   }
   to {
     opacity: 1;
