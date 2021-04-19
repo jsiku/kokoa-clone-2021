@@ -1,17 +1,66 @@
-#welcome {
-    font-size: 20px;
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 0px;
+    text-align: center; /*text-align을 안하면 텍스트가 왼쪽 정렬로 됨. 위치는 가운데지만.*/
+  }
+  
+  .welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .welcome-header__text {
+    width: 60%;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+  
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+  }
+  
+  #login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+    background-color: var(--pinkgold);
+  }
+  
+  #login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+  } /*type="submit"을 제외한 input에 적용할 css*/
+  
+  #login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  #login-form input:focus {
+    border-color: var(--caramel);
+  }
+  
+  #login-form input[type="submit"] {
+    border-radius: 5px;
+    background-color: var(--caramel);
+    padding: 20px 0px;
+    cursor: pointer;
+  }
+  
+  #login-form a {
     text-align: center;
-    padding-top: 80px;
-    font-weight: 600;
-}
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+  }
 
-.main-screen .welcome-des {
-    margin-top: 20px;
-    text-align: center;
-    color: gray;
-}
+  #login-form a:focus,#login-form input:focus  {
+    outline: none;
+  }
 
-.main-screen p:nth-child(2){
-    margin-top: 0px;
-}
-
+  
+  

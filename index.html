@@ -12,66 +12,38 @@
 </head>
 
 <body>
-
-<!--loading too big message-->
-
-    <div id="toobig">
-        <span>The screen is too big</span>
-      </div>
-    <div id="loading">
-        <i class="fas fa-comment"></i>
-      </div>
-
-<!--satus bar-->
-
     <div class="status-bar">
         <div class="status-bar__column">
-            <span>No Service
-            </span>
-            <i class="fas fa-wifi"></i>
-        </div>
-
-        <div class="status-bar__column">
-            <span>18:43</span>
+            <span>No Service</span>
+            <i class="fas fa-ban"></i>
+            <i class="fas fa-volume-off"></i>
         </div>
         <div class="status-bar__column">
-            <span>25%
-            </span>
-            <i class="fas fa-battery-quarter"></i>
+            <span>00:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
             <i class="fas fa-bolt"></i>
- 
         </div>
     </div>
 
-<!--Welcome content-->
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcom to Jsiku talk</h1>
+        <P class="welcome-header__text">If you have an Account,</P>
+        <P class="welcome-header__text">log in with your email or phone number.</P>
+    </header>
 
-    <main class="main-screen">
+    <form action="chats.html" method="GET" id="login-form">
+        <input name="userName" required autocomplete="off" type="text" placeholder="Email or Phone number">
+        <input name="password" required type="password" placeholder="Password">
+        <input type="submit" value="Log in">
+        <a href="#">Find account of Password</a>
+    </form>
 
-        <!--Welcome message-->
-
-        <h1 id="welcome">
-            Welcome to KokoaTalk
-        </h1>
-        <p class="welcome-des">If you have a Kokoa Account,</p>
-        <p class="welcome-des">log in with your email or phone number.</p>
-
-        <!--login form-->
-
-        <form class="loginform">
-            <input type="email" required placeholder="Email or phone number">
-            <input type="password" required minlength="6" placeholder="Password">
-            <input type="submit" value="Log In">
-            <input type="submit" value="Sign Up">
-        </form>
-
-        <!--Find Account-->
-
-        <div id="f-account">
-            <a href="#">Find Kokoa Account or Password</a>
-        </div>
-
-
-    </main>
+    <div id=wide_screen>
+        <span>This screen is too WIDE</span>
+    </div>
 
 </body>
 

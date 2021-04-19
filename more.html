@@ -13,94 +13,103 @@
 
 <body>
     <div class="status-bar">
+        <!--status bar-->
         <div class="status-bar__column">
-            <span>No Service
-            </span>
-            <i class="fas fa-wifi"></i>
-        </div>
-
-        <div class="status-bar__column">
-            <span>18:43</span>
+            <span>No Service</span>
+            <i class="fas fa-ban"></i>
+            <i class="fas fa-volume-off"></i>
         </div>
         <div class="status-bar__column">
-            <span>25%
-            </span>
-            <i class="fas fa-battery-quarter"></i>
+            <span>00:00</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fas fa-battery-full"></i>
             <i class="fas fa-bolt"></i>
- 
         </div>
     </div>
-<main class="main-screen">
-    <header class="lv1-menu">
-        <h1 class="lv1-title">More</h1>
-        <ul class="lv1-btns">
-            <li class="lv1-btn"><i class="fas fa-search fa-lg"></i></li>
-            <li class="lv1-btn"><i class="fas fa-music fa-lg"></i></li>
-            <li class="lv1-btn lv1-setting"><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a><div class="cogdot"></div></li>
-        </ul>
-    </header>
-    <div class="list-box">
-        <div class="list-box__left">
-            <img class="img-cover chats-img basic-item--first" src="image/IMG_20210313_174727094.jpg"/>
-            <div class="list-box__des">
-                <div class="list-box__name">Haram</div>
-                <div class="list-box__shortmessage">+49 123 940 049<i class="fas fa-info-circle"></i></div>
-            </div>
+
+    <header class="screenheader">
+        <h1 class="screenheader__title">More</h1>
+        <div class="screenheader__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
+                <div class="screen-header__Notification badge-dot"></div>
+            </span>
         </div>
-        <div class="list-box__right">
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img class="user-component__avatar user-component__avatar--xl" src="images/IMG_20210331_091628577.jpg">
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Jsiku</h4>
+                    <h6 class="user-component__subtitle more-user-component__subtitle">+49 0163-****-***9<div
+                            class="badge-alert"><span>i</span></div>
+                    </h6>
+                </div>
+            </div>
+            <div class="user-component__column"></div>
             <i class="far fa-comment-alt fa-2x"></i>
         </div>
 
+        <div class="icon-row">
+            <div class="icon-row__icon"><i class="far fa-calendar"></i><span>Calander</span></div>
+            <div class="icon-row__icon"><i class="far fa-grin-alt"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fas fa-brush"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="fas fa-user-circle"></i><span>Accont</span></div>
+        </div>
 
+        <div class="more-suggestions">
+            <h6 class="more-suggestions-title">Suggestions</h6>
+            <div class="more-suggestions-icons">
+                <div class="more-suggestions-icon">
+                    <div class="more-suggestions-icon-img">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <span class="more-suggestions-icon-text">Story</span>
+                </div>
+
+                <div class="more-suggestions-icon">
+                    <div class="more-suggestions-icon-img">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <span class="more-suggestions-icon-text">Friends</span>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <nav class="nav">
+        <!--nav bar-->
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html"><span class="nav__chatNotification badge">1</span><i
+                        class="far fa-comment fa-2x"></i></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__ellipsisNotification badge-dot"></div><i class="fas fa-ellipsis-h fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id=wide_screen>
+        <span>This screen is too WIDE</span>
     </div>
 
-    <div class="more-grid-box">
-        <div class="more-grid-item"><i class="far fa-calendar-minus"></i><p>Calendar</p></div>
-        <div class="more-grid-item"><i class="far fa-hdd"></i><p>Talk drive</p></div>
-        <div class="more-grid-item"><i class="far fa-surprise"></i><p>Emoticon</p></div>
-        <div class="more-grid-item"><i class="fab fa-affiliatetheme"></i><p>Themes</p></div>
-        <div class="more-grid-item"><i class="far fa-user-circle"></i><p>Account</p></div>
-        <div class="more-grid-item"><i class="far fa-comments"></i><p>Openchat</p></div>
-    </div>
-<p class="Suggestions"> Suggestions</p>
-
-<div class="more-grid-box2">
-    <div class="more-grid-item"><img class="sugg_img" src="image/download.jpg" alt="story"/><p>Kokoa story</p></div>
-    <div class="more-grid-item"><img class="sugg_img" src="image/download (1).jpg" alt="friends"/><p>Kokoa friends</p></div>
-    <div class="more-grid-item"><img class="sugg_img" src="image/download (2)e.jpg" alt="gem"/><p>Kokoa gem</p></div>
-</div>
-
-
-
-
-
-</main>
-
-<nav class="nav">
-    <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-              <i class="far fa-user fa-2x"></i>
-            </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__noti">1</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-              <i class="fas fa-search fa-2x"></i>
-            </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-              <i class="fas fa-ellipsis-h fa-2x"></i>
-            </a>
-        </li>
-      </ul>
-</nav>
 </body>
 
 </html>
