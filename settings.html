@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings-Cafe talk</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="setting-screen">
+    <div class="status-bar"> <!--status bar-->
+        <div class="status-bar__column">
+            <span>No Service</span>    
+            <i class="fas fa-ban"></i>
+            <i class="fas fa-volume-off"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>00:22</span>
+        </div>
+        <div class="status-bar__column">    
+            <span>120%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="alt-header"><!--Settings 해더-->
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header-title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-lg"></i>
+        </div>
+    </header>
+
+    <main class="main-screen main-set"> <!--설정 리스트-->
+       <ul class="settings-list">
+        <li class="setting__settings"><!--설정 1-->
+            <div class="setting__settings-column">
+                <i class="fas fa-bullhorn"></i>
+                <span>Notices</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+       
+        <li class="setting__settings"><!--설정 2-->
+            <div class="setting__settings-column">
+                <i class="fas fa-flask"></i>
+                <span>Cafe Lab</span>
+            </div>
+            <div class="setting__settings-column"></div>
+            </li>
+
+        <li class="setting__settings"><!--설정 3-->
+            <div class="setting__settings-column">
+                <i class="fas fa-info-circle"></i>
+                <span>Version</span>
+            </div>
+            <div class="setting__settings-column">
+                <span>Latest Version</span>
+            </div>
+        </li>
+        <div class="setting__devider"></div>
+
+        <li class="setting__settings"><!--설정 4-->
+            <div class="setting__settings-column">
+                <i class="fas fa-lock"></i>
+                <span>Privacy</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+        <li class="setting__settings"><!--설정 5-->
+            <div class="setting__settings-column">
+                <i class="far fa-bell"></i>
+                <span>Notifications</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+        <li class="setting__settings"><!--설정 6-->
+            <div class="setting__settings-column">
+                <i class="far fa-user"></i>
+                <span>Friends</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+        <li class="setting__settings"><!--설정 7-->
+            <div class="setting__settings-column">
+                <i class="far fa-comment"></i>
+                <span>Chats</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+        <li class="setting__settings"><!--설정 8-->
+            <div class="setting__settings-column">
+                <i class="far fa-sun"></i>
+                <span>Display</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+        <li class="setting__settings"><!--설정 9-->
+            <div class="setting__settings-column">
+                <i class="fas fa-brush"></i>
+                <span>Themes</span>
+            </div>
+            <div class="setting__settings-column">
+                <span>Default Theme</span>
+            </div>
+        </li>
+        <li class="setting__settings"><!--설정 10-->
+            <div class="setting__settings-column">
+                <i class="fas fa-phone-alt"></i>
+                <span>Call</span>
+            </div>
+            <div class="setting__settings-column"></div>
+        </li>
+       </ul>
+    </main>
+
+    
+
+    <nav class="nav"> <!--nav bar-->
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html"><span class="nav__chatNotification badge">1</span><i class="far fa-comment fa-2x"></i></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-hashtag fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html"><div class="nav__ellipsisNotification badge-dot"></div><i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id=no-mobile> <!--media query screen-->
+        <span>This screen is too big 😭;;</span>
+    </div>
+
+    <script   
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script> <!--폰트어썸 js 키트-->
+</body>
+</html>

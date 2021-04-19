@@ -1,0 +1,37 @@
+#welcome-page{
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes HideSplashScreen {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  #splash-screen {
+    background-color: var(--caramel);
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: HideSplashScreen 2.5s linear;
+  }
+  
+  #splash-screen span:first-child{
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+
+  #splash-screen span:last-child{
+      font-size: 24px;
+  }

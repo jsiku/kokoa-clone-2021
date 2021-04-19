@@ -1,95 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css">
+    <title>Chats-Cafe talk</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <div class="status-bar">
+    <div class="status-bar"> <!--status bar-->
         <div class="status-bar__column">
-            <span>No Service
-            </span>
-            <i class="fas fa-wifi"></i>
-        </div>
-
-        <div class="status-bar__column">
-            <span>18:43</span>
+            <span>No Service</span>    
+            <i class="fas fa-ban"></i>
+            <i class="fas fa-volume-off"></i>
         </div>
         <div class="status-bar__column">
-            <span>25%
-            </span>
-            <i class="fas fa-battery-quarter"></i>
+            <span>00:22</span>
+        </div>
+        <div class="status-bar__column">    
+            <span>120%</span>
+            <i class="fas fa-battery-full"></i>
             <i class="fas fa-bolt"></i>
- 
         </div>
     </div>
-<main class="main-screen">
-    <header class="lv1-menu">
-        <h1 class="lv1-title">Chats</h1>
-        <ul class="lv1-btns">
-            <li class="lv1-btn"><i class="fas fa-search fa-lg"></i></li>
-            <li class="lv1-btn"><i class="fas fa-comment-dots fa-lg"></i></li>
-            <li class="lv1-btn"><i class="fas fa-music fa-lg"></i></li>
-            <li class="lv1-btn lv1-setting"><a href="setting.html"><i class="fas fa-cog fa-lg"></i></a></li>
-        </ul>
+
+    <header class="screenheader"><!--chat해더-->
+        <h1 class="screenheader__title">Chats</h1>
+        <div class="screenheader__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="far fa-comment-dots fa-lg"></i></span>
+            <span><i class="far fa-comments fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
     </header>
-    <div class="list-box">
-        <div class="list-box__left">
-            <img class="img-cover chats-img basic-item--first" src="image/IMG_20210313_233438578.jpg"/>
-            <div class="list-box__des">
-                <div class="list-box__name">Hayu</div>
-                <div class="list-box__shortmessage">hallo ich bin Hayu.</div>
+
+    <main class="main-screen"> <!--chatting list-->
+        <a href="chat-starbucks.html">
+            <div class="user-component chat-component"> 
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="images/starbucks.png" >
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Starbucks</h4>
+                        <h6 class="user-component__subtitle">sleep...?</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">00:11</span>
+                    <div class="badge">1</div>
+                </div>
             </div>
-        </div>
-        <div class="list-box__right">
-            <div class="list-box__time">
-                21:22
+        </a>  
+
+        <a href="chat-ediya.html">
+            <div class="user-component chat-component"> 
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="images/ediya.png" >
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Ediya</h4>
+                        <h6 class="user-component__subtitle">Ok</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">14:32</span>
+                </div>
             </div>
-            <div class="list-box__new">
-                1
+        </a>  
+
+        <a href="chat-congCha.html">
+            <div class="user-component chat-component"> 
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="images/gongcha.png" >
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Gong-cha</h4>
+                        <h6 class="user-component__subtitle">Thx!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">16:30</span>
+                </div>
             </div>
-        </div>
+        </a>  
+
+        <a href="chat-hollys.html">
+            <div class="user-component chat-component"> 
+                <div class="user-component__column">
+                    <img class="user-component__avatar" src="images/hollys.png" >
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Hollys</h4>
+                        <h6 class="user-component__subtitle">Don't worry~~</h6>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span class="user-component__time">19:45</span>
+                </div>
+            </div>
+        </a>  
+    </main>
+
+    
+    
+
+    <nav class="nav"> <!--nav bar-->
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html"><span class="nav__chatNotification badge">1</span><i class="fas fa-comment fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html"><i class="fas fa-hashtag fa-2x"></i></a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html"><div class="nav__ellipsisNotification badge-dot"></div><i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id=no-mobile> <!--media query screen-->
+        <span>This screen is too big 😭;;</span>
     </div>
 
-
-
-
-
-
-</main>
-
-<nav class="nav">
-    <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-              <i class="far fa-user fa-2x"></i>
-            </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__noti">1</span>
-            <i class="fas fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-              <i class="fas fa-search fa-2x"></i>
-            </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-              <i class="fas fa-ellipsis-h fa-2x"></i>
-            </a>
-        </li>
-      </ul>
-</nav>
+    <script   
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script> <!--폰트어썸 js 키트-->
 </body>
-
 </html>
